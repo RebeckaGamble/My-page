@@ -1,0 +1,107 @@
+.footer {
+    background: linear-gradient(
+        90deg,
+        rgb(53, 25, 240) 0%,
+        rgb(121, 132, 234) 100%
+      );
+    border-style: groove;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0;
+    height: 250px;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+.cont-left {
+    height: auto;
+    row-gap: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-right {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.contact {
+    font-size: 24px;
+    padding-bottom: 3px;
+}
+
+.contact-info {
+    font-size: 18px;
+}
+
+.linkbtn {
+    font-size: medium;
+    font: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.linkbtn:visited {
+    color: blue;
+}
+
+.linkbtn:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+@media screen and (min-width: 360px) {
+    .cont-left {
+        padding-top: 6%;
+    }
+    
+    .cont-right {
+        padding-top: 6%;
+        padding-left: 3%;
+    }
+}
+
+
+@media screen and (min-width: 570px) {
+    
+    .cont-left { 
+        padding-top: 20px;
+    }
+
+    .cont-right {
+        padding-top: 20px;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .cont-left {
+        row-gap: 6px;
+        padding-top: 0px;
+    }
+    
+    .cont-right {
+        
+        row-gap: 6px;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .footer {
+        padding-top: 50px;
+    }
+    
+    .cont-left {
+        row-gap: 8px;
+    }
+    
+    .cont-right {
+        row-gap: 8px;
+    }
+}

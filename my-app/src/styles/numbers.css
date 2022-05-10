@@ -1,0 +1,165 @@
+.numbers {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: 0%;
+    padding-top: 10px;
+}
+
+.numbers:before {
+    content: '';
+    background: url('../images/dice.jpg') no-repeat center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.rub {
+    text-align: center;
+    font-size: 42px;
+    margin-top: 0%;
+    padding-top: 4%;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(75, 14, 116);
+}
+
+.count {
+    box-sizing: border-box;
+    padding: 25px;
+    margin: 20px;
+    display: inline;
+    text-align: center;
+    border: solid black;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+}
+
+.num-container {
+    position: relative;
+    display: flex;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+    height: 300px;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 34px;
+    background: linear-gradient(
+        90deg,
+        rgb(53, 25, 240) 0%,
+        rgb(121, 132, 234) 100%
+    );
+}
+
+.num {
+    align-items: center;
+    display: inline;
+    color: white;
+}
+
+.num-container .buttons {
+    padding: 2%;
+    display: flex;
+}
+
+.btn {
+    border-radius: 15px;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 13px;
+}
+
+.btn:hover {
+    color: white;
+    transform: scale(1.2);
+    background: linear-gradient(
+    90deg,
+    rgb(50, 14, 123) 0%,
+    rgb(167, 43, 244) 100%
+  );
+}
+
+@media screen and (min-width: 360px) {
+
+    .num-container {
+        position: relative;
+        display: flex;
+        margin: 0 auto 0 auto;
+        padding-bottom: 0px;
+        height: auto;
+        width: 80%;
+        border-radius: 5px;
+        font-size: 28px;
+        
+    }
+
+    .num-container .buttons {
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .num-container {
+        position: relative;
+        display: flex;
+        margin: 0 auto 0 auto;
+        padding: 10px;
+        height: 300px;
+        width: 80%;
+        border-radius: 5px;
+        font-size: 34px;  
+    }
+
+    .num-container .buttons {
+        padding: 2%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn {
+        border-radius: 15px;
+        padding: 3%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 13px;
+    }
+
+    .rub {
+        font-size: 64px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .num-container {
+        padding-bottom: 10px;
+        height: auto;   
+    }
+
+    .num-container .buttons {
+        justify-content: space-evenly;
+    }
+
+    .btn {
+        font-size: 20px;
+    }
+
+    .rub {
+        font-size: 77px;
+    }
+}
